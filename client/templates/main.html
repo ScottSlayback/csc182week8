@@ -1,0 +1,13 @@
+<template name="main">
+    <div class="container">
+        <table>
+    {{#each message in messages}}
+        <tr>
+            <td>{{message.user}}says...</td>
+            <td>{{message.message}}</td>
+            <td>{{message.when}}</td>
+        </tr>
+        {{/each}}
+        </table>
+    </div>
+</template>
